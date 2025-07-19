@@ -1,0 +1,86 @@
+body {
+  background-color: #0d1b2a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container {
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.score {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+#gameBoard {
+  position: relative;
+  display: inline-block;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  box-shadow: 0 0 15px cyan;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #0f2b40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  border: 2px solid cyan;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background-color: #18586c;
+}
+
+#winnerText {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: cyan;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 10px cyan;
+}
+
+button:hover {
+  background-color: #00e6e6;
+}
+
+#winLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
