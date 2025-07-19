@@ -14,6 +14,8 @@ This is a web-based Tic Tac Toe game where you play against an AI opponent. The 
 - JavaScript
 
 ## project structure
+<pre>
+
 tic-tac-toe-vs-ai/
 ├── app.py
 ├── static/
@@ -22,6 +24,7 @@ tic-tac-toe-vs-ai/
 ├── templates/
 │   └── index.html
 └── README.md
+
 ## How to Run
 1. Make sure Python is installed in your system.
 2. Install Flask:
